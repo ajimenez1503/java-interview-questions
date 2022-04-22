@@ -1,32 +1,32 @@
-# java-interview-questions
+# java interview questions
 
 Interview questions solved in Java
 
 ## Exercise 1
 
-### Description
+#### Description
 
 Find the second max number in a list of integer.
 
-#### Signature:
+##### Signature:
 
 ```java
 Integer find2Max(ArrayList<Integer> list);
 ```
 
-### Scenario 1
+##### Scenario 1
 
 - Input {}
 - Output: Exception
 
-### Scenario 2
+##### Scenario 2
 
 - Input {1,2,3}
 - Output 2
 
 ## Exercise 2
 
-### Description
+#### Description
 
 Find the number of times the following conditions became true in a list of integer.
 
@@ -34,18 +34,18 @@ Find the number of times the following conditions became true in a list of integ
 i -j == list[i] - list[j]
 ```
 
-#### Signature:
+##### Signature:
 
 ```java
 Integer count(ArrayList<Integer> list);
 ```
 
-### Scenario 1
+##### Scenario 1
 
 - Input {}
 - Output: Exception
 
-### Scenario 2
+##### Scenario 2
 
 - Input {1,2,3}
 - Output 9
