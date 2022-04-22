@@ -1,9 +1,8 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class Exercise1SecondMax {
+public class Exercise1 {
 
     public static Integer find2Max(ArrayList<Integer> list) throws Exception {
         if (list.isEmpty()) {
