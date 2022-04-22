@@ -1,6 +1,8 @@
 # java interview questions
 
-Interview questions solved in Java
+Interview questions solved in Java.
+1. [Exercise 1](#exercise1)
+2. [Exercise 2](#exercise2)
 
 ## Exercise 1
 
