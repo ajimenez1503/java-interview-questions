@@ -1,8 +1,8 @@
 # java interview questions
 
 Interview questions solved in Java.
-1. [Exercise 1](#exercise1)
-2. [Exercise 2](#exercise2)
+1. [Exercise 1](#exercise-1)
+2. [Exercise 2](#exercise-2)
 
 ## Exercise 1
 
