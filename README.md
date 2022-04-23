@@ -4,6 +4,7 @@ Interview questions solved in Java.
 1. [Exercise 1 - Find second max](#exercise-1)
 2. [Exercise 2 - Count `i -j == list[i] - list[j]`](#exercise-2)
 3. [Exercise 3 - URL Tracking Parameters](#exercise-3)
+4. [Exercise 4 - Load Balancer](#exercise-4)
 
 ## Exercise 1
 
@@ -99,3 +100,16 @@ Existing parameters should be left unchanged, i.e. remain in either query or fra
  
 - Output `https://www.telegraph.co.uk/theatre/what-to-see/renaming-colston-hall-dreary-failure-imagination/?
   utm_source=Facebook&utm_campaign=test&utm_medium=Social`
+
+## Exercise 4
+
+#### Description
+
+Create a load balancer with the following requirements:
+- Register instances
+  - It should be possible to register an instance, identified by an address.
+  - Each address should be unique, it should not be possible to register the same address more than once.
+  - Load balancer should accept up to 10 addresses.
+- Random invocation
+  - Develop an algorithm that, when invoking the Load Balancer's get() method multiple times, should return one
+  backend-instance choosing between the registered ones randomly. 
