@@ -5,6 +5,7 @@ Interview questions solved in Java.
 2. [Exercise 2 - Count `i -j == list[i] - list[j]`](#exercise-2)
 3. [Exercise 3 - URL Tracking Parameters](#exercise-3)
 4. [Exercise 4 - Load Balancer](#exercise-4)
+5. [Exercise 5 - Coin Change](#exercise-5)
 
 ## Exercise 1
 
@@ -113,3 +114,37 @@ Create a load balancer with the following requirements:
 - Random invocation
   - Develop an algorithm that, when invoking the Load Balancer's get() method multiple times, should return one
   backend-instance choosing between the registered ones randomly. 
+
+## Exercise 5
+
+ou are given an integer array `coins` representing coins of different denominations and an integer amount representing a total amount of money.
+
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return `-1`.
+
+You may assume that you have an infinite number of each kind of coin.
+
+##### Example 1:
+
+```
+Input: coins = [1,2,5], amount = 11
+Output: 3
+Explanation: 11 = 5 + 5 + 1
+```
+
+##### Example 2:
+
+```
+Input: coins = [2], amount = 3
+Output: -1
+```
+
+##### Example 3:
+
+```
+Input: coins = [1], amount = 0
+Output: 0
+```
+##### Constraints:
+- `1 <= coins.length <= 12`
+- `1 <= coins[i] <= 231 - 1`
+- `0 <= amount <= 104`
