@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Exercise5 {
 
+    
     static public int coinChange(int[] coins, int amount) {
         int i = 1;
         int childResult = -1;
@@ -25,25 +26,4 @@ public class Exercise5 {
         }
         return -1;
     }
-
-
-//    static public int coinChange(int[] coins, int amount) {
-//        int i = 1;
-//        if (amount == 0) {
-//            return  0;
-//        }
-//        while (i <= coins.length && coins[coins.length - i] > amount) {
-//            i++;
-//        }
-//        if (i <= coins.length) {
-//            int childResult = coinChange(coins, amount - coins[coins.length - i]);
-//            if (childResult == -1 ) {
-//                return -1;
-//            } else {
-//                return 1 + childResult;
-//            }
-//        } else {
-//            return -1;
-//        }
-//    }
 }
