@@ -6,6 +6,7 @@ Interview questions solved in Java.
 3. [Exercise 3 - URL Tracking Parameters](#exercise-3)
 4. [Exercise 4 - Load Balancer](#exercise-4)
 5. [Exercise 5 - Coin Change](#exercise-5)
+6. [Exercise 6 - Word Pattern](#exercise-6)
 
 ## Exercise 1
 
@@ -148,3 +149,37 @@ Output: 0
 - `1 <= coins.length <= 12`
 - `1 <= coins[i] <= 231 - 1`
 - `0 <= amount <= 104`
+
+## Exercise 6
+
+Given a `pattern` and a string `s`, find if `s` follows the same pattern.
+
+Here follow means a full match, such that there is a bijection between a letter in `pattern` and a non-empty word in s.
+
+##### Example 1:
+
+```
+Input: pattern = "abba", s = "dog cat cat dog"
+Output: true
+```
+
+##### Example 2:
+
+```
+Input: pattern = "abba", s = "dog cat cat fish"
+Output: false
+```
+
+##### Example 3:
+
+```
+Input: pattern = "aaaa", s = "dog cat cat dog"
+Output: false
+```
+##### Constraints:
+- `1 <= pattern.length <= 300`
+- `pattern` contains only lower-case English letters.
+- `1 <= s.length <= 3000`
+- `s` contains only lowercase English letters and spaces ' '.
+- `s` does not contain any leading or trailing spaces.
+- All the words in s are separated by a single space.
