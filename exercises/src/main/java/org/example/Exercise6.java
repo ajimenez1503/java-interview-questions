@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +10,7 @@ public class Exercise6 {
         Map<Character, String> map = new HashMap<>();
         String[] sSplited = s.split("\\s+");
         if (sSplited.length != pattern.length()) {
-            return  false;
+            return false;
         }
         for (int i = 0; i < pattern.length(); i++) {
             if (!map.containsKey(pattern.charAt(i))) {

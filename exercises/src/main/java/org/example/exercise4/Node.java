@@ -1,7 +1,5 @@
 package org.example.exercise4;
 
-import java.util.*;
-
 public class Node {
     String address;
 

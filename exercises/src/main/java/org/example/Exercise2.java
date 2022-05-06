@@ -9,10 +9,10 @@ public class Exercise2 {
     /**
      * Find the number of times the following conditions became true in a list of integer.
      * i -j == list[i] - list[j]
-     *
      * No efficient approach using two loops.
-     * @param   list  The list of integer.
-     * @throws  Exception If list is empty.
+     *
+     * @param list The list of integer.
+     * @throws Exception If list is empty.
      */
     public static Integer countImpl1(ArrayList<Integer> list) throws Exception {
         if (list.isEmpty()) {
@@ -33,10 +33,10 @@ public class Exercise2 {
     /**
      * Find the number of times the following conditions became true in a list of integer.
      * i -j == list[i] - list[j]
-     *
      * Efficient approach using a map.
-     * @param   list  The list of integer.
-     * @throws  Exception If list is empty.
+     *
+     * @param list The list of integer.
+     * @throws Exception If list is empty.
      */
     public static Integer countImpl2(ArrayList<Integer> list) throws Exception {
         if (list.isEmpty()) {
@@ -53,7 +53,7 @@ public class Exercise2 {
         }
         Integer count = 0;
         for (Integer value : map.values()) {
-                count += (int) Math.pow(value, 2);
+            count += (int) Math.pow(value, 2);
         }
         return count;
     }

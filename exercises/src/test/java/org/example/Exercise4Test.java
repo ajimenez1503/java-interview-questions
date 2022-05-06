@@ -1,11 +1,11 @@
 package org.example;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.example.exercise4.LoadBalancer;
 import org.example.exercise4.Node;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class Exercise4Test {
     @Test
@@ -27,13 +27,13 @@ public class Exercise4Test {
             assertTrue(loadBalancer.registry("1.1.1.1"));
             boolean gotNode1 = false, gotNode2 = false;
             int i = 0;
-            while(!gotNode1 || !gotNode2) {
+            while (!gotNode1 || !gotNode2) {
                 Node node = loadBalancer.get();
-                if(node.getAddress() == "1.1.1.0" ) {
+                if (node.getAddress() == "1.1.1.0") {
 
                     gotNode1 = true;
                 }
-                if(node.getAddress() == "1.1.1.1" ) {
+                if (node.getAddress() == "1.1.1.1") {
                     gotNode2 = true;
                 }
                 if (++i > 10000) {
@@ -41,7 +41,7 @@ public class Exercise4Test {
                 }
             }
             assertTrue(gotNode1);
-            assertTrue(gotNode2 );
+            assertTrue(gotNode2);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
