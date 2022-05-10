@@ -9,6 +9,7 @@ Interview questions solved in Java.
 5. [Exercise 5 - Coin Change](#exercise-5)
 6. [Exercise 6 - Word Pattern](#exercise-6)
 7. [Exercise 7 - Pattern Searching](#exercise-7)
+8. [Exercise 8 - Find maximum sum root to leaf path in a binary tree1](#exercise-8)
 
 ## Exercise 1
 
@@ -225,3 +226,14 @@ Explanation:
 ##### Constraints:
 
 - `n > m`
+
+## Exercise 8
+
+Given a binary tree, write an efficient algorithm to find the maximum sum root-to-leaf path, i.e., the maximum sum path
+from the root node to any leaf node in it.
+
+##### Example 1:
+For example, consider the following tree.
+![img.png](img/exercise8_example1.png)
+
+The maximum sum is 18, and the maximum sum path is [1, 3, 5, 9].
