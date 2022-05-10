@@ -9,7 +9,8 @@ Interview questions solved in Java.
 5. [Exercise 5 - Coin Change](#exercise-5)
 6. [Exercise 6 - Word Pattern](#exercise-6)
 7. [Exercise 7 - Pattern Searching](#exercise-7)
-8. [Exercise 8 - Find maximum sum root to leaf path in a binary tree1](#exercise-8)
+8. [Exercise 8 - Find maximum sum root to leaf path in a binary tree](#exercise-8)
+9. [Exercise 9 - Sliding window maximum](#exercise-9)
 
 ## Exercise 1
 
@@ -233,7 +234,45 @@ Given a binary tree, write an efficient algorithm to find the maximum sum root-t
 from the root node to any leaf node in it.
 
 ##### Example 1:
+
 For example, consider the following tree.
 ![img.png](img/exercise8_example1.png)
 
 The maximum sum is 18, and the maximum sum path is [1, 3, 5, 9].
+
+## Exercise 9
+
+You are given an array of integers `nums`, there is a sliding window of size k which is moving from the very left of the
+array to the very right. You can only see the `k` numbers in the window. Each time the sliding window moves right by one
+position.
+
+Return the max sliding window.
+
+##### Example 1:
+
+```
+Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+Output: [3,3,5,5,6,7]
+Explanation: 
+Window position                Max
+---------------               -----
+[1  3  -1] -3  5  3  6  7       3
+ 1 [3  -1  -3] 5  3  6  7       3
+ 1  3 [-1  -3  5] 3  6  7       5
+ 1  3  -1 [-3  5  3] 6  7       5
+ 1  3  -1  -3 [5  3  6] 7       6
+ 1  3  -1  -3  5 [3  6  7]      7
+```
+
+##### Example 2:
+
+```
+Input: nums = [1], k = 1
+Output: [1]
+```
+
+##### Constraints:
+
+- `1 <= nums.length <= 105`
+- `-10^4 <= nums[i] <= 10^4`
+- `1 <= k <= nums.length`
