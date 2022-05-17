@@ -11,6 +11,7 @@ Interview questions solved in Java.
 7. [Exercise 7 - Pattern Searching](#exercise-7)
 8. [Exercise 8 - Find maximum sum root to leaf path in a binary tree](#exercise-8)
 9. [Exercise 9 - Sliding window maximum](#exercise-9)
+10. [Exercise 10 - How frequently each range occurs](#exercise-10)
 
 ## Exercise 1
 
@@ -276,3 +277,40 @@ Output: [1]
 - `1 <= nums.length <= 105`
 - `-10^4 <= nums[i] <= 10^4`
 - `1 <= k <= nums.length`
+
+## Exercise 10
+
+Given a list (positive integer) latencies, a number of buckets and a bucket width, calculate how frequently each range
+of latencies occurs.
+Buckets always start at 0. For instance, the ranges for 11 buckets of width 10 are:
+
+```
+0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99, >=100
+```
+
+Function:
+
+```
+calc_buckets(latencies, number_of_buckets, bucket_width);
+```
+
+##### Example:
+
+```
+Input:
+    number_of_buckets= 11
+    bucket_width = 10
+    latencies = [90, 11, 3, 35, 17, 28, 64, 53, 52, 110] 
+Output: 
+    0-9: 1
+    10-19: 2 
+    20-29: 1 
+    30-39: 1 
+    40-49: 0 
+    50-59: 2 
+    60-69: 1
+    70-79: 0 
+    80-89: 0 
+    90-99: 1  
+    100+ : 1
+```
