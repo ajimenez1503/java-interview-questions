@@ -12,6 +12,7 @@ Interview questions solved in Java.
 8. [Exercise 8 - Find maximum sum root to leaf path in a binary tree](#exercise-8)
 9. [Exercise 9 - Sliding window maximum](#exercise-9)
 10. [Exercise 10 - How frequently each range occurs](#exercise-10)
+12. [Exercise 12 - Get the maximum word count in a text file](#exercise-11)
 
 ## Exercise 1
 
@@ -313,4 +314,23 @@ Output:
     80-89: 0 
     90-99: 1  
     100+ : 1
+```
+
+## Exercise 11
+
+Given file name, get the word and the max count.
+
+Function:
+
+```
+int maxWordCount(String fileNmae);
+```
+
+##### Example:
+
+```
+Input:
+    File1.txt
+        "bla bla sdfa bla"
+Output: 3
 ```
