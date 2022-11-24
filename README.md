@@ -321,7 +321,6 @@ Output:
 Given file name, get the word and the max count.
 
 Function:
-
 ```
 int maxWordCount(String fileNmae);
 ```
@@ -333,4 +332,26 @@ Input:
     File1.txt
         "bla bla sdfa bla"
 Output: 3
+```
+
+## Exercise 12
+
+Find the largest positive integer that can be formed by deleting only one occurrence of a given digit.
+
+Function:
+```
+string removeX(string N, char X)
+```
+
+##### Example 1:
+
+```
+Input: `num = 56321, digit = 5`
+Output: `6321`
+```
+##### Example 1:
+
+```
+Input: `num = 936230, digit = 3`
+Output: `96230`
 ```
