@@ -12,7 +12,9 @@ Interview questions solved in Java.
 8. [Exercise 8 - Find maximum sum root to leaf path in a binary tree](#exercise-8)
 9. [Exercise 9 - Sliding window maximum](#exercise-9)
 10. [Exercise 10 - How frequently each range occurs](#exercise-10)
-12. [Exercise 12 - Get the maximum word count in a text file](#exercise-11)
+11. [Exercise 11 - Get the maximum word count in a text file](#exercise-11)
+12. [Exercise 12 -Find the largest positive integer](#exercise-12)
+13. [Exercise 13 - URL Shorten](#exercise-13)
 
 ## Exercise 1
 
@@ -355,3 +357,32 @@ Output: `6321`
 Input: `num = 936230, digit = 3`
 Output: `96230`
 ```
+
+## Exercise 13
+
+Given as input a URL and a keyword with a max length of 20 characters, chosen by the user, generate a URL.
+
+Given a URL as input, generate a short URL with a path made of a random sequence of 4 alphanumeric characters.
+
+Example:
+
+##### Example 1:
+Input:
+URL: http://looooong.com/somepath
+keyword: MY-NEW-WS
+Output: 	
+URL: http://short.com/MY-NEW-WS
+
+##### Example 2:
+Input:
+URL: http://looooong.net/another/somepath
+keyword: POTATO
+Output:
+URL: http://short.com/POTATO
+
+##### Example 3:
+
+Input:
+URL: http://looooong.com/somepath
+Output:
+URL: http://short.com/ZfGd
