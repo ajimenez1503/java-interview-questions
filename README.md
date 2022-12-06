@@ -15,6 +15,8 @@ Interview questions solved in Java.
 11. [Exercise 11 - Get the maximum word count in a text file](#exercise-11)
 12. [Exercise 12 -Find the largest positive integer](#exercise-12)
 13. [Exercise 13 - URL Shorten](#exercise-13)
+14. [Exercise 14 - Generate a list of possible words from a character matrix](#exercise-14)
+
 
 ## Exercise 1
 
@@ -386,3 +388,23 @@ Input:
 URL: http://looooong.com/somepath
 Output:
 URL: http://short.com/ZfGd
+
+
+
+## Exercise 14
+
+Given an M × N boggle board, find a list of all possible words that can be formed by a sequence of adjacent characters on the board.
+
+We are allowed to search a word in all eight possible directions, i.e., North, West, South, East, North-East, North-West, South-East, South-West, but a word should not have multiple instances of the same cell.
+
+##### Example 1:
+Input:
+
+Valid words:  `[START, NOTE, SAND, STONED]`
+```
+['M','S','E','F']
+['R','A','T','D']
+['L','O','N','E']
+['K','A','F','B']
+```
+Output: `[NOTE, SAND, STONED]`
