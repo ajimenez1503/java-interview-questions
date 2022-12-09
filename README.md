@@ -16,7 +16,7 @@ Interview questions solved in Java.
 12. [Exercise 12 -Find the largest positive integer](#exercise-12)
 13. [Exercise 13 - URL Shorten](#exercise-13)
 14. [Exercise 14 - Generate a list of possible words from a character matrix](#exercise-14)
-
+15. [Exercise 15 - Least Recently Used (LRU)](#exercise-15)
 
 ## Exercise 1
 
@@ -372,7 +372,7 @@ Example:
 Input:
 URL: http://looooong.com/somepath
 keyword: MY-NEW-WS
-Output: 	
+Output:
 URL: http://short.com/MY-NEW-WS
 
 ##### Example 2:
@@ -390,7 +390,6 @@ Output:
 URL: http://short.com/ZfGd
 
 
-
 ## Exercise 14
 
 Given an M × N boggle board, find a list of all possible words that can be formed by a sequence of adjacent characters on the board.
@@ -402,9 +401,40 @@ Input:
 
 Valid words:  `[START, NOTE, SAND, STONED]`
 ```
-['M','S','E','F']
-['R','A','T','D']
-['L','O','N','E']
-['K','A','F','B']
+{'M', 'S', 'E', 'F'},
+{'R', 'A', 'T', 'D'},
+{'L', 'O', 'N', 'E'},
+{'K', 'A', 'F', 'B'}
 ```
 Output: `[NOTE, SAND, STONED]`
+
+
+## Exercise 15
+
+Design a data structure that implements a Least Recently Used (LRU) cache.
+
+Implement the LRUCache class:
+- LRUCache(capacity)    //Initialize the LRU cache with positive size capacity.
+- value get(key)        //Return the value of the key if the key exists, otherwise return null
+- void put(key, value)  //Update the value of the key if the key exists.
+  //Otherwise, add the key-value pair to the cache, taking into account the LRU principle.
+
+
+##### Example 1:
+```
+LRUCache lRUCache = new LRUCache(2);
+lRUCache.put(1,"A");                    // cache is {1="A"}
+lRUCache.get(1);                        // return "A"
+lRUCache.put(2,"B");                    // cache is {1="A", 2="B"}
+lRUCache.put(3,"D");                    // LRU key was 1, cache is {2="B", 3="D"}
+lRUCache.get(2);                        // returns "B"
+lRUCache.put(10,"SOMETHING");           // LRU key was 3, cache is {2="B", 10="SOMETHING"}
+lRUCache.get(3);                        // returns null
+lRUCache.get(2);                        // returns "B"
+lRUCache.get(10);                       // returns "SOMETHING"
+lRUCache.put(2, "P");                   // Replacing key, cache is {2="P", 10="SOMETHING"}
+lRUCache.put(3,"G");                    // LRU key was 10, cache is {2="P", 3="G"}
+System.out.println(lRUCache.get(10));   // returns null
+System.out.println(lRUCache.get(2));    // returns "P"
+System.out.println(lRUCache.get(3));    // returns "G"
+```
