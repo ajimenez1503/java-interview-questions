@@ -19,6 +19,7 @@ Interview questions solved in Java.
 15. [Exercise 15 - Least Recently Used (LRU)](#exercise-15)
 16. [Exercise 16 - Time Based Key-Value Store](#exercise-16)
 17. [Exercise 17 - Min Stack](#exercise-17)
+18. [Exercise 18 - RateLimiter](#exercise-18)
 
 
 ## Exercise 1
@@ -491,3 +492,11 @@ minStack.pop();
 minStack.top();    // return 0
 minStack.getMin(); // return -2
 ```
+
+
+## Exercise 18
+
+Whenever you expose a web service / api endpoint, you need to implement a rate limiter to prevent abuse of the service (DOS attacks).
+
+Implement a RateLimiter Class with an isAllow method. Every request comes in with a unique clientID, deny a request if that client has made more than 2 requests in the past second.
+
